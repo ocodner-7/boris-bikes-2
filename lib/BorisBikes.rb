@@ -13,6 +13,10 @@ class DockingStation
   def dock_bikes(returning_bikes)
     @docked_bikes += returning_bikes
   end  
+
+  def check_dock
+    @docked_bikes[0]
+  end  
 end  
 
 class Bike

@@ -18,7 +18,9 @@ describe DockingStation do
 
   it "dock_bikes method will return hired bikes to docking station" do
     docking_station = DockingStation.new
-    docking_station.dock_bikes(["henry", "sam"])
-    expect(docking_station.docked_bikes).to eq(["henry", "sam"])
+    bike1 = Bike.new
+    bike2 = Bike.new
+    docking_station.dock_bikes([bike1, bike2])
+    expect(docking_station.docked_bikes).to eq([bike1, bike2])
   end  
 end 
